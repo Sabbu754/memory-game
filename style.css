@@ -1,0 +1,199 @@
+/* ---- Responsive Design ---- */
+
+/* Tablet screen Media Query */
+@media screen and (min-width: 1001px) {
+   .container {
+     margin: auto;
+     width: 1000px;
+  }
+  #game {
+    border-spacing: 30px;
+  }
+
+  .card {
+    height: 9rem;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 1000px) {
+  .container {
+    width: 100%;
+  }
+
+  #game {
+    border-spacing: 20px;
+  }
+
+  .card {
+    height: 7rem;
+  }
+}
+
+
+/* Phone screen Media Query */
+@media screen and (max-width: 500px) {
+  .container {
+    width: 100%;
+  }
+
+  #game {
+    border-spacing: 8px;
+  }
+
+  .card {
+    height: 5rem;
+  }
+}
+
+
+
+
+/* ---- Basic Website styling, Flexbox container with .box and .tile children elements ---- */
+body {
+  font-family: "Noto Serif", serif;
+  font-size: 1.1em;
+  text-align: center;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+
+.box {
+  align-self: auto;
+  margin: auto;
+  width: 100%;
+}
+
+
+.tile {
+  align-self: center;
+  flex-grow: 1;
+  height: auto;
+  width: 25%;
+}
+
+
+
+/* ---- Game Styling ---- */
+table {
+  background:	#783b07;
+  margin: auto;
+  width: 90%;
+  font-size: 1.3rem;
+}
+
+
+
+
+/* Cards
+Box Shadow Example P: http://www.css3.info/preview/box-shadow/ */
+.card {
+  background: url(background-84824_1280.jpg) no-repeat;
+  background-size: cover;
+  -moz-box-shadow: 5px 5px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 5px 5px rgba(0,0,0,0.5);
+  box-shadow: 5px 5px rgba(0,0,0,0.5);
+}
+
+
+.hidden {
+  color: transparent;
+}
+
+
+.selected {
+  background: #fffacd;
+}
+
+
+.correct {
+  background: #228b22;
+  pointer-events: none;
+}
+
+
+
+
+
+/* ---- stars ---- */
+.checked {
+    color: #ff8c00;
+}
+
+
+
+
+/* ---- button ---- */
+#restart {
+    background-color: #f44336;
+    border: none;
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+
+
+/* ---- Footer Styling ---- */
+footer {
+  margin: auto;
+  overflow: hidden;
+}
+
+
+.footer {
+  font-size: 0.8em;
+  text-align: center;
+}
+
+
+
+
+/* ---- Modal Styling Victory Message -----
+Resource: https://www.w3schools.com/howto/howto_css_modals.asp */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 80%;
+    height: 80%;
+    overflow: auto;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 70%;
+}
+
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
